@@ -1,20 +1,4 @@
 @charset "utf-8";
-@import "fonts.css";
-
-:root {
-    --color-1: #fff;
-    --color-2: #272727;
-
-    --background-1: #40aaf6;
-
-    --border-1: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-}
 
 a {
     cursor: pointer;

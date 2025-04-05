@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.section-body .statistics {
+    width: 100%;
+    min-height: auto;
+}
+
+.statistics .statistics-body {
+    width: 85%;
+    min-height: 90vh;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 35px;
+    background-color: var(--background-2);
+    box-shadow: var(--box-shadow-1);
+}
