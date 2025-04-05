@@ -53,6 +53,11 @@ a {
     font-family: "Roboto Regular", sans-serif;
 }
 
+h1 {
+    color: var(--color-2);
+    font-family: "Roboto Regular", sans-serif;
+}
+
 h2 {
     color: var(--color-2);
     font-family: "Roboto Regular", sans-serif;

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.section-body .news {
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 4rem;
+}
+
+.news .news-body {
+    width: 85%;
+    min-height: 80vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    border-radius: 35px;
+    background-color: var(--background-2);
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.3s ease;
+}

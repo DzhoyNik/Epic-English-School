@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+.section-body .students {
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 4rem;
+}
+
+.students .students-body {
+    width: 85%;
+    min-height: 80vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 35px;
+    background-color: var(--background-2);
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.3s ease;
+}
+
+.students-body .students-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border: var(--border-2);
+    border-width: 2px;
+    border-radius: 35px;
+}
+
+.students-section.students-filter {
+    height: 4vh;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.students-filter .add {
+    margin-right: 1rem;
+}
+
+.students-filter .search {
+    margin-right: 1rem;
+}
+
+.students-filter button {
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--background-1);
+    background-color: var(--background-3);
+}
+
+.students-section.students-filter h2 {
+    cursor: pointer;
+    margin: 1rem;
+    padding: 0.25rem 1rem;
+    background-color: var(--background-3);
+    border-radius: 35px;
+}
+
+.students-section.students-list {
+    min-height: 20vh;
+}
+
+.students-list .student-section {
+    width: 22vw;
+    height: 25vh;
+    overflow: hidden;
+    margin-right: 0.55rem;
+    margin-bottom: 1rem;
+    border: var(--border-2);
+    border-width: 1px;
+    border-radius: 35px;
+}
+
+.student-section .student-personal {
+    height: 31%;
+    padding: 1rem;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.student-personal .student-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-personal .student-img img {
+    width: 75%;
+}
+
+.student-personal .student-info {
+    display: flex;
+    align-items: center;
+}
+
+.student-personal .student-info h2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.student-section .student-another {
+    padding: 0.5rem 1rem;
+}
+
+.student-section .student-another p {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.student-section .student-action {
+    padding: 0 1rem;
+    display: flex;
+}
+
+.student-section .student-action button {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: var(--background-1);
+    background-color: var(--background-3);
+}
