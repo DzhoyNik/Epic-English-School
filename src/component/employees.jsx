@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import "../css/sections/students.css";
 import Sidebar from "./sidebar";
-import Student from "./student";
+import Empoloyee from "./employee";
 
 const pageVariants = {
     initial: {
@@ -29,15 +29,15 @@ const pageVariants = {
 };
 
 
-const Students = () => {
+const Employees = () => {
     useEffect(() => {
-        document.title = "Студенты | Epic English School"
+        document.title = "Сотрудники | Epic English School"
     }, [])
 
     const studentItems = [];
 
     for (let i = 0; i < 15; i++) {
-        studentItems.push(<Student />)
+        studentItems.push(<Empoloyee />)
     }
 
     return (
@@ -69,4 +69,4 @@ const Students = () => {
     )
 }
 
-export default Students;
+export default Employees;

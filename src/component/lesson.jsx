@@ -1,7 +1,32 @@
 import React, { useEffect } from "react";
+import { motion } from 'framer-motion';
 
 import "../css/sections/lesson.css";
 import Sidebar from "./sidebar";
+
+const pageVariants = {
+    initial: {
+        y: "100vh",
+        opacity: 0,
+    },
+    in: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.4,
+            ease: "easeOut"
+        }
+    },
+    out: {
+        y: "-100vh",
+        opacity: 0,
+        transition: {
+            duration: 0.4,
+            ease: "easeIn"
+        }
+    }
+};
+
 
 const Lesson = () => {
     useEffect(() => {
@@ -11,6 +36,7 @@ const Lesson = () => {
     return (
         <div className="section">
             <Sidebar />
+            <motion.div  variants={pageVariants} initial="initial" animate="in" exit="out" className="page">
             <div className="section-body">
                 <div className="lesson">
                     <div className="lesson-body">
@@ -173,6 +199,7 @@ const Lesson = () => {
                     </div>
                 </div>
             </div>
+            </motion.div>
         </div>
     )
 }

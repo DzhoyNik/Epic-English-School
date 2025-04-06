@@ -34,7 +34,7 @@ class Auth extends React.Component {
                             <input type="password" name="" placeholder="Введите пароль" />
                         </div>
                         <button type="button">Авторизоваться</button>
-                        <a type="button" style={{marginTop: 15}} onClick={this.handleClick}><span className="material-symbols-outlined">shield_person</span>Тествый режим</a>
+                        <a href type="button" style={{marginTop: 15}} onClick={this.handleClick}><span className="material-symbols-outlined">shield_person</span>Тествый режим</a>
                     </form>
                 </div>
                 <div className="auth-logo">

@@ -183,6 +183,16 @@
     background-color: var(--background-3);
 }
 
+.lesson-students::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 2rem; 
+}
+
+.lesson-students::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 2rem;
+}
+
 .lesson-students h2 {
     text-align: center;
     margin-bottom: 1rem;
