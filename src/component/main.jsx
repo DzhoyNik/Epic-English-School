@@ -4,29 +4,7 @@ import ChartCourses from "./chart/chartCourses";
 
 import "../css/sections/statistics.css";
 import Sidebar from "./sidebar";
-
-const pageVariants = {
-    initial: {
-        y: "100vh",
-        opacity: 0,
-    },
-    in: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            duration: 0.4,
-            ease: "easeOut"
-        }
-    },
-    out: {
-        y: "-100vh",
-        opacity: 0,
-        transition: {
-            duration: 0.4,
-            ease: "easeIn"
-        }
-    }
-};
+import TransitionVariants from "./transitionVariants";
 
 const Main = () => {
     useEffect(() => {
@@ -36,7 +14,7 @@ const Main = () => {
     return (
         <div className="section">
             <Sidebar />
-            <motion.div  variants={pageVariants} initial="initial" animate="in" exit="out" className="page">
+            <motion.div  variants={TransitionVariants} initial="initial" animate="in" exit="out" className="page">
             <div className="section-body">
                 <div className="statistics">
                     <div className="statistics-body">

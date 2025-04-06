@@ -3,31 +3,8 @@ import { motion } from 'framer-motion';
 
 import "../css/sections/students.css";
 import Sidebar from "./sidebar";
-import Empoloyee from "./employee";
-
-const pageVariants = {
-    initial: {
-        y: "100vh",
-        opacity: 0,
-    },
-    in: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            duration: 0.4,
-            ease: "easeOut"
-        }
-    },
-    out: {
-        y: "-100vh",
-        opacity: 0,
-        transition: {
-            duration: 0.4,
-            ease: "easeIn"
-        }
-    }
-};
-
+import Empoloyee from "./models/employee";
+import TransitionVariants from "./transitionVariants";
 
 const Employees = () => {
     useEffect(() => {
@@ -43,7 +20,7 @@ const Employees = () => {
     return (
         <div className="section">
             <Sidebar />
-            <motion.div  variants={pageVariants} initial="initial" animate="in" exit="out" className="page">
+            <motion.div  variants={TransitionVariants} initial="initial" animate="in" exit="out" className="page">
             <div className="section-body">
                 <div className="students">
                     <div className="students-body">

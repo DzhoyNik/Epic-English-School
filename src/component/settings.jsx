@@ -3,29 +3,7 @@ import { motion } from 'framer-motion';
 
 import "../css/sections/settings.css";
 import Sidebar from "./sidebar";
-
-const pageVariants = {
-    initial: {
-        y: "100vh",
-        opacity: 0,
-    },
-    in: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            duration: 0.4,
-            ease: "easeOut"
-        }
-    },
-    out: {
-        y: "-100vh",
-        opacity: 0,
-        transition: {
-            duration: 0.4,
-            ease: "easeIn"
-        }
-    }
-};
+import TransitionVariants from "./transitionVariants";
 
 const Settings = () => {
     useEffect(() => {
@@ -35,7 +13,7 @@ const Settings = () => {
     return (
         <div className="section">
             <Sidebar />
-            <motion.div  variants={pageVariants} initial="initial" animate="in" exit="out" className="page">
+            <motion.div  variants={TransitionVariants} initial="initial" animate="in" exit="out" className="page">
             <div className="section-body">
                 <div className="settings">
                     <div className="settings-body">

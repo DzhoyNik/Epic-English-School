@@ -82,6 +82,10 @@ button {
     border-radius: 35px;
 }
 
+.material-symbols-outlined {
+    user-select: none;
+}
+
 .section {
     position: relative;
     width: 100vw;
@@ -95,4 +99,5 @@ button {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 0;
 }
