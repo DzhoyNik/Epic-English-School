@@ -14,7 +14,7 @@ const Main = () => {
     return (
         <div className="section">
             <Sidebar />
-            <motion.div  variants={TransitionVariants} initial="initial" animate="in" exit="out" className="page">
+            <motion.div variants={TransitionVariants} initial="initial" animate="in" exit="out" className="page">
             <div className="section-body">
                 <div className="statistics">
                     <div className="statistics-body">

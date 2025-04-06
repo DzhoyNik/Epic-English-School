@@ -20,7 +20,7 @@ const News = () => {
                 <div className="news">
                     <div className="news-body">
                         <div className="news-sections news-action">
-                        <div className="add">
+                            <div className="add">
                                 <button type="button" title="Создать новость"><span className="material-symbols-outlined">add_notes</span></button>
                             </div>
                             <div className="search">

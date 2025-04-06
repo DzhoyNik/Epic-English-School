@@ -9,6 +9,7 @@ import Auth from './component/auth';
 import Main from "./component/main";
 import Lesson from "./component/lesson";
 import News from "./component/news";
+import Courses from "./component/courses";
 import Students from "./component/students";
 import Employees from "./component/employees";
 import Settings from "./component/settings";
@@ -24,7 +25,7 @@ const AnimatedRoutes = () => {
                 <Route path="/main" element={<Main />} />
                 <Route path="/lesson" element={<Lesson />} />
                 <Route path="/news" element={<News />} />
-                <Route path="/courses" element={<News />} />
+                <Route path="/courses" element={<Courses />} />
                 <Route path="/students" element={<Students />} />
                 <Route path="/employees" element={<Employees />} />
                 <Route path="/settings" element={<Settings />} />
