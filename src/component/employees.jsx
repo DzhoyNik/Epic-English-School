@@ -1,15 +1,21 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from 'framer-motion';
 
 import "../css/sections/students.css";
 import Sidebar from "./sidebar";
 import Empoloyee from "./models/employee";
-import TransitionVariants from "./transitionVariants";
+import TransitionVariants from "./animation/page";
 
 const Employees = () => {
+    const navigate = useNavigate();
     useEffect(() => {
-        document.title = "Сотрудники | Epic English School"
+        document.title = "Преподаватели | Epic English School"
     }, [])
+
+    const handleClick = () => {
+        navigate("./create");
+    }
 
     const studentItems = [];
 
@@ -26,7 +32,7 @@ const Employees = () => {
                     <div className="students-body">
                         <div className="students-section students-filter">
                             <div className="add">
-                                <button type="button"><span className="material-symbols-outlined">person_add</span></button>
+                                <button type="button" onClick={() => handleClick()}><span className="material-symbols-outlined">person_add</span></button>
                             </div>
                             <div className="search">
                                 <button type="button"><span className="material-symbols-outlined">search</span></button>

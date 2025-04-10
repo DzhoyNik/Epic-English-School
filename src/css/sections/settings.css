@@ -36,7 +36,7 @@
     font-size: 1.35rem;
 }
 
-.settings-body input, textarea, select {
+.settings-body input, .settings-body textarea, .settings-body select {
     width: 100%;
     font-size: 1.35rem;
     font-family: "Roboto Regular", sans-serif;

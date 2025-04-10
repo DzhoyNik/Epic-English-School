@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+.section-body .courses {
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 4rem;
+}
+
+.courses input, .courses textarea, .courses select {
+    margin-left: 0;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    font-family: "Roboto Regular", sans-serif;
+    border: var(--border-1);
+    border-radius: 35px;
+}
+
+.courses .courses-body {
+    width: 85%;
+    min-height: 80vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 35px;
+    background-color: var(--background-2);
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.3s ease;
+}
+
+.courses-body .courses-create {
+    padding: 1rem;
+    border: var(--border-2);
+    border-width: 2px;
+    border-radius: 35px;
+}
+
+.courses-create .input-section {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 18% 82%;
+    margin-bottom: 1rem;
+}
+
+.courses-create .input-section textarea {
+    resize: none;
+    width: unset;
+} 
+
+.courses-create .input-section:nth-child(1) textarea {
+    height: 15vh;
+}
+
+.courses-create .input-section:nth-child(2) textarea {
+    height: 25vh;
+}
+
+.courses-create .create-modules {
+    border: var(--border-2);
+    border-width: 2px;
+    border-radius: 35px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.create-modules .create-modules-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.create-modules-actions .create-modules-actions-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.create-modules-actions-buttons button {
+    margin-left: 1rem;
+}
+
+.create-modules .create-modules-empty {
+    height: 7.5vh;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-2);
+    border-radius: 35px;
+    background-color: var(--background-3);
+}
+
+.create-modules .create-modules-section {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 70% 20%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: var(--border-2);
+    border-radius: 35px;
+}
+
+.create-modules-section h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.create-modules-section .create-modules-section-actions {
+    display: flex;
+    justify-content: end;
+}
+
+.create-modules-section-actions button {
+    margin-left: 0.75rem;
+}
+
+.courses-create .create-actions {
+    display: flex;
+}
+
+.courses-create .create-actions button {
+    width: unset;
+    height: unset;
+    margin-right: 1rem;
+    padding: 0.5rem 1.5rem;
+}

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import "../css/sections/lesson.css";
 import Sidebar from "./sidebar";
-import TransitionVariants from "./transitionVariants";
+import TransitionVariants from "./animation/page";
 
 
 const Lesson = () => {

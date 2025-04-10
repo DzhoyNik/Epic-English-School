@@ -1,0 +1,15 @@
+export {default as Auth} from "./auth";
+export {default as Main} from "./main";
+export {default as ChartCourses} from "./chart/chartCourses";
+export {default as Lesson} from "./lesson";
+export {default as News} from "./news";
+export {Create as NewsCreate} from "./news/create";
+export {View as NewsView} from "./news/view";
+export {default as Courses} from "./courses";
+export {Create as CourseCreate} from "./courses/createCourse";
+export {default as Students} from "./students";
+export {default as Employees} from "./employees";
+export {default as UserCreate} from "./user/create";
+export {default as UserProfile} from "./user/profile";
+export {default as UserEdit} from "./user/edit";
+export {default as Settings} from "./settings";

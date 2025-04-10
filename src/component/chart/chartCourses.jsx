@@ -1,7 +1,7 @@
 import { Line } from 'react-chartjs-2';
-import { Chart, LineController, LineElement } from "chart.js";
+import { Chart, LineController, LineElement, CategoryScale, LinearScale, PointElement } from "chart.js";
 
-Chart.register(LineController, LineElement);
+Chart.register(LineController, LineElement, CategoryScale, LinearScale, PointElement);
 
 const customerData = [
     {

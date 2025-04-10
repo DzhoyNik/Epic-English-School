@@ -14,6 +14,11 @@
     align-items: center;
     justify-content: center;
     background-color: var(--background-3);
+    transition: 0.3s ease;
+}
+
+.courses button:hover {
+    color: #0095ff;
 }
 
 .courses .courses-body {
