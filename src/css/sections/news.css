@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+.section-body .news {
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 4rem;
+}
+
+#news-list button {
+    width: 45px;
+    height: 45px;
+    color: var(--background-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-3);
+}
+
+#news-list .news-body {
+    width: 85%;
+    min-height: 80vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 35px;
+    background-color: var(--background-2);
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.3s ease;
+}
+
+#news-list .news-sections{
+    border: var(--border-2);
+    border-width: 2px;
+    border-radius: 35px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+#news-list .news-sections.news-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#news-list .news-sections.news-action button {
+    width: 85px;
+    margin: 0rem 0.5rem;
+    transition: 0.3s ease;
+}
+
+#news-list .news-sections.news-action button:hover {
+    color: #0095ff;
+}
+
+#news-list .news-sections.news-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#news-list .news-list .news-section {
+    width: 18.9vw;
+    height: 43.5vh;
+    border: var(--border-2);
+    border-radius: 35px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+}
+
+#news-list .news-list .news-img {
+    height: 22vh;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+#news-list .news-list .news-img img {
+    width: 100%;
+}
+
+#news-list .news-list .news-info {
+    height: 13.5vh;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+#news-list .news-list .news-info h2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#news-list .news-list .news-info p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-indent: 1.25rem;
+    padding: 0.5rem;
+}
+
+#news-list .news-list .news-action {
+    height: 4.5vh;
+    display: flex;
+}
+
+#news-list .news-list .news-action button {
+    margin-right: 1rem;
+    transition: 0.3s ease;
+}
+
+#news-list .news-list .news-action button:hover {
+    color: #0095ff;
+}

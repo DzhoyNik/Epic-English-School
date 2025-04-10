@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+.section-body .settings {
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 4rem;
+}
+
+.settings .settings-body {
+    width: 85%;
+    min-height: 80vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 35px;
+    background-color: var(--background-2);
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.3s ease;
+}
+
+.settings-body h2 {
+    margin-bottom: 2rem;
+}
+
+.settings-body .settings-section {
+    padding: 2rem;
+    border: var(--border-2);
+    border-width: 2px;
+    border-radius: 35px;
+    margin-bottom: 2rem;
+}
+
+.settings-body p {
+    width: 35%;
+    font-size: 1.35rem;
+}
+
+.settings-body input, .settings-body textarea, .settings-body select {
+    width: 100%;
+    font-size: 1.35rem;
+    font-family: "Roboto Regular", sans-serif;
+    margin-left: 1rem;
+    padding: 0.75rem 1.25rem;
+    border: var(--border-1);
+    border-radius: 35px;
+    box-sizing: border-box;
+}
+
+.settings-body option {
+    font-size: 1rem;
+}
+
+.settings-body textarea {
+    height: 17.5vh;
+    resize: none;
+}
+
+.settings-body textarea::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 2rem; 
+}
+
+.settings-body textarea::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 2rem;
+}
+
+.settings-body button {
+    padding: 1rem 1.5rem;
+}
+
+.settings-section .input-section {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.settings-section .settings-brand {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 73.5%;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.settings-brand .settings-logo input{
+    height: 100%;
+    margin: 0;
+    background-color: var(--background-3);
+}
+
+.settings-brand .settings-info .input-section:nth-child(2) {
+    margin: 0;
+}
+
+.settings-section:nth-child(2) p {
+    width: 15%;
+}
+
+.settings-section:nth-child(3) .type-FA {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.type-FA .FA {
+    cursor: pointer;
+    width: 15%;
+    margin-right: 2rem;
+    padding: 1.5rem;
+    border: var(--border-1);
+    border-radius: 35px;
+}
+
+.type-FA .FA.active {
+    background-color: var(--background-4);
+    border: var(--border-1);
+    border-color: var(--background-1);
+}

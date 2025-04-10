@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.user .user-profile {
+    width: 85%;
+    min-height: 80vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 35px;
+    background-color: var(--background-2);
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.3s ease;
+}
+
+.user-profile .user-profile-info {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: var(--border-2);
+    border-width: 2px;
+    border-radius: 35px;
+}
+
+.user-profile .user-profile-general {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-profile-general .user-section:first-child {
+    height: 30vh;
+    grid-column: 1/2;
+    grid-row: 1/6;
+    background-color: var(--background-3);
+}
+
+.user-profile-info .user-section {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.user-profile-info .user-section p:first-child {
+    margin-right: 1rem;
+}
+
+.user-profile .user-profile-actions {
+    display: flex;
+}
+
+.user-profile-actions button {
+    margin-right: 1rem;
+}
